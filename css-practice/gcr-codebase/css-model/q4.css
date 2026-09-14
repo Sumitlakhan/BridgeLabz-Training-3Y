@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: white;
+}
+
+header h1 {
+    text-shadow: 3px 3px 5px gray;
+}
+
+.cards {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+    padding: 30px;
+    background: white;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.card h2 {
+    text-shadow: 2px 2px 4px gray;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 30px gray;
+}
+
+.card1 {
+    box-shadow: 0 5px 10px gray;
+}
+
+.card2 {
+    box-shadow: 5px 10px 20px gray;
+}
+
+.card3 {
+    box-shadow: 10px 15px 30px gray;
+}

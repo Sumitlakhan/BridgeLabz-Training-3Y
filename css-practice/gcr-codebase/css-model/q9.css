@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px gray;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: blue;
+    outline: 3px solid lightblue;
+    outline-offset: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 3px dashed red;
+    outline-offset: 5px;
+}

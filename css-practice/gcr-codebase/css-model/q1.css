@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.box {
+    width: 180px;
+    padding: 25px;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    border-color: red;
+}
+
+.solid {
+    border: 5px solid blue;
+}
+
+.dashed {
+    border: 5px dashed green;
+}
+
+.double {
+    border: 8px double purple;
+}
+
+.groove {
+    border: 8px groove orange;
+}
+
+.padding-demo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.padding-demo div {
+    background: lightblue;
+    border: 2px solid black;
+}
+
+.small-padding {
+    padding: 10px;
+}
+
+.medium-padding {
+    padding: 25px;
+}
+
+.large-padding {
+    padding: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
