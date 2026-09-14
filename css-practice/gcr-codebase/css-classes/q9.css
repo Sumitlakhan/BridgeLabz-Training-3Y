@@ -1,0 +1,57 @@
+/* Page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Center buttons */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Button */
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover + transform + shadow */
+button:hover {
+    background-color: #16a34a;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px #0003;
+}
+
+/* Active pseudo-class */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Focus pseudo-class */
+button:focus {
+    outline: 3px solid #f59e0b;
+}
+
+/* nth-child */
+button:nth-child(2):hover {
+    background-color: #9333ea;
+}

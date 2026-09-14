@@ -1,0 +1,71 @@
+/* Page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Center animation elements */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-box {
+    display: flex;
+    gap: 30px;
+}
+
+/* Animated boxes */
+.box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Different delays */
+.box1 {
+    animation-delay: 0s;
+}
+
+.box2 {
+    animation-delay: 0.5s;
+}
+
+.box3 {
+    animation-delay: 1s;
+    animation-direction: alternate;
+}
+
+/* Keyframes */
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

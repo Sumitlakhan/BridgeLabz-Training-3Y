@@ -1,0 +1,114 @@
+/* Box sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111827;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* Main area */
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content card */
+.card {
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #0002;
+    text-align: center;
+}
+
+/* Image */
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #9ca3af;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: 3px solid #bfdbfe;
+}
+
+/* Button */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111827;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}

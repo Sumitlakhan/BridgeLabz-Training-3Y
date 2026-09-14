@@ -1,0 +1,64 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+}
+
+/* Card */
+.card {
+    width: 90%;
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px #0002;
+}
+
+/* Flexbox form */
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+input {
+    flex: 1;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover */
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Focus */
+input:focus,
+select:focus {
+    outline: 3px solid #bfdbfe;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+}
