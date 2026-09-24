@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+figure img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.list-group-item {
+    transition: 0.2s;
+}
+
+.list-group-item:hover {
+    background: #f8f9fa;
+}

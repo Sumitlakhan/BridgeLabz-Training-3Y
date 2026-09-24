@@ -1,0 +1,36 @@
+/* Custom styling for the landing page */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    padding: 80px 0;
+}
+
+/* Custom minimum height */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Hero heading */
+.hero-section h1 {
+    color: #212529;
+}
+
+/* Hero paragraph */
+.hero-section p {
+    color: #555;
+}
+
+/* Button hover effect */
+.hero-section .btn {
+    transition: 0.3s;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-2px);
+}
