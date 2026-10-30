@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Form Builder</title>
+</head>
+<body>
+
+<h2>Custom Form Builder</h2>
+
+<div id="container"></div>
+
+<h3>Form Data:</h3>
+<p id="result"></p>
+
+<script>
+"use strict";
+
+class FormBuilder {
+
+    constructor(fields) {
+        this.fields = fields;
+    }
+
+    createForm() {
+
+        let html = '<form id="myForm">';
+
+        for (let i = 0; i < this.fields.length; i++) {
+
+            html += `<label>${this.fields[i].label}</label>`;
+
+            html += `<input type="${this.fields[i].type}" 
+                     id="field${i}"><br><br>`;
+        }
+
+        html += '<button type="submit">Submit</button>';
+        html += '</form>';
+
+        document.getElementById("container").innerHTML = html;
+
+        document.getElementById("myForm").addEventListener("submit", (e) => {
+
+            e.preventDefault();
+
+            let data = this.getFormData();
+
+            document.getElementById("result").innerHTML =
+                JSON.stringify(data);
+
+            console.log(data);
+        });
+    }
+
+    getFormData() {
+
+        let data = {};
+
+        for (let i = 0; i < this.fields.length; i++) {
+
+            data[this.fields[i].label] =
+                document.getElementById("field" + i).value;
+        }
+
+        return data;
+    }
+}
+
+let fields = [
+    { type: "text", label: "Username" },
+    { type: "email", label: "Email" },
+    { type: "password", label: "Password" }
+];
+
+let form = new FormBuilder(fields);
+
+form.createForm();
+
+</script>
+
+</body>
+</html>

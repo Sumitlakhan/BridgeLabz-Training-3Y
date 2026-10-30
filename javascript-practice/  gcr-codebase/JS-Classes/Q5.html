@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+</head>
+
+<body>
+
+<h2>Movie Ticket Booking</h2>
+
+<form id="bookingForm">
+
+    <label>Name:</label>
+    <input type="text" id="name">
+    <br><br>
+
+    <label>Email:</label>
+    <input type="text" id="email">
+    <br><br>
+
+    <label>Seats:</label>
+    <input type="number" id="seats">
+    <br><br>
+
+    <button type="submit">Book Ticket</button>
+
+</form>
+
+<h3 id="result"></h3>
+
+<script>
+"use strict";
+
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let seats = Number(document.getElementById("seats").value);
+
+    let namePattern = /^[A-Za-z ]+$/;
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let result = document.getElementById("result");
+
+    if (!namePattern.test(name)) {
+
+        result.innerHTML = "Invalid Name";
+        result.style.color = "red";
+
+    }
+
+    else if (!emailPattern.test(email)) {
+
+        result.innerHTML = "Invalid Email";
+        result.style.color = "red";
+
+    }
+
+    else if (!Number.isInteger(seats) || seats < 1 || seats > 10) {
+
+        result.innerHTML = "Seats must be between 1 and 10";
+        result.style.color = "red";
+
+    }
+
+    else {
+
+        let booking = {
+            name: name,
+            email: email,
+            seats: seats
+        };
+
+        result.style.color = "green";
+
+        result.innerHTML =
+            "Booking Successful!<br>" +
+            "Name: " + booking.name + "<br>" +
+            "Email: " + booking.email + "<br>" +
+            "Seats: " + booking.seats;
+
+        console.log("Booking Details:", booking);
+    }
+
+});
+
+</script>
+
+</body>
+</html>

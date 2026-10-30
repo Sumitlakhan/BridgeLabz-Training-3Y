@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Update User</h2>
+
+<form id="userForm">
+    Name: <input type="text" id="name" value="John"><br><br>
+    Email: <input type="email" id="email" value="john@mail.com"><br><br>
+    Age: <input type="number" id="age" value="21"><br><br>
+
+    <button type="submit">Update</button>
+</form>
+
+<h3>Updated Details</h3>
+<p id="result"></p>
+
+<script>
+"use strict";
+
+let user = {
+    name: "John",
+    email: "john@mail.com",
+    age: 21
+};
+
+document.getElementById("userForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    user.name = document.getElementById("name").value;
+    user.email = document.getElementById("email").value;
+    user.age = Number(document.getElementById("age").value);
+
+    document.getElementById("result").innerHTML =
+        `Name: ${user.name}<br>
+         Email: ${user.email}<br>
+         Age: ${user.age}`;
+
+    console.log(user);
+});
+</script>
+
+</body>
+</html>
