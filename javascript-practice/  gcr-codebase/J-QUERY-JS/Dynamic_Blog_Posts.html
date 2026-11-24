@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Blog Posts</title>
+    <style>
+        article {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .featured {
+            background: lightyellow;
+        }
+
+        .tag {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog Management</h1>
+
+    <input type="text" id="postTitle" placeholder="Enter post title">
+
+    <button id="addPost">Add New Post</button>
+    <button id="featuredPost">Prepend Featured Post</button>
+    <button id="removePost">Remove Last Post</button>
+    <button id="addTag">Add Tags</button>
+
+    <div id="posts">
+
+        <article>
+            <h2>JavaScript Basics</h2>
+            <p>Learn JavaScript programming.</p>
+        </article>
+
+        <article>
+            <h2>jQuery Tutorial</h2>
+            <p>Learn jQuery easily.</p>
+        </article>
+
+        <article>
+            <h2>HTML Tutorial</h2>
+            <p>Learn HTML structure.</p>
+        </article>
+
+        <article>
+            <h2>CSS Tutorial</h2>
+            <p>Learn CSS styling.</p>
+        </article>
+
+        <article>
+            <h2>Web Development</h2>
+            <p>Build modern websites.</p>
+        </article>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="Q8_Dynamic_Blog_Posts.js"></script>
+
+</body>
+</html>

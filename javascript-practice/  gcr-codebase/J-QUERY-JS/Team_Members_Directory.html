@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Members Directory</title>
+    <style>
+        .department {
+            padding: 15px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .member {
+            padding: 10px;
+            margin: 5px;
+            background: lightgray;
+        }
+
+        .highlight {
+            background: yellow;
+        }
+
+        .contact {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Team Members Directory</h1>
+
+    <button id="randomEmployee">Random Employee</button>
+    <button id="collapseTeam">Collapse / Expand Team</button>
+
+    <div class="department">
+        <h2 class="department-title">Development</h2>
+
+        <div class="team">
+            <div class="member manager">Manager: Rahul</div>
+
+            <div class="reports">
+                <div class="member employee">
+                    Sumit
+                    <span class="contact">sumit@gmail.com</span>
+                </div>
+
+                <div class="member employee">
+                    Aman
+                    <span class="contact">aman@gmail.com</span>
+                </div>
+
+                <div class="member employee">
+                    Rohit
+                    <span class="contact">rohit@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="department">
+        <h2 class="department-title">Design</h2>
+
+        <div class="team">
+            <div class="member manager">Manager: Priya</div>
+
+            <div class="reports">
+                <div class="member employee">
+                    Neha
+                    <span class="contact">neha@gmail.com</span>
+                </div>
+
+                <div class="member employee">
+                    Karan
+                    <span class="contact">karan@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="Q5_Team_Members_Directory.js"></script>
+</body>
+</html>

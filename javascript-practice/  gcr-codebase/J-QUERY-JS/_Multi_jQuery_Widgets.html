@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi jQuery Widgets</title>
+    <style>
+        .slide {
+            padding: 20px;
+            background: lightblue;
+            margin: 10px;
+        }
+
+        .widget {
+            display: inline-block;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .active {
+            background: yellow;
+        }
+
+        #modal {
+            display: none;
+            padding: 20px;
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dashboard</h1>
+
+    <div class="slide">Slide 1: Welcome</div>
+    <div class="slide">Slide 2: Notifications</div>
+    <div class="slide">Slide 3: Dashboard Updates</div>
+
+    <button id="showModal">Show Notification</button>
+
+    <div id="modal">
+        <h2>New Notification!</h2>
+        <button id="closeModal">Close</button>
+    </div>
+
+    <h2>Widgets</h2>
+
+    <div class="widget" title="Sales information">Sales</div>
+    <div class="widget" title="Course information">Courses</div>
+    <div class="widget" title="Profile information">Profile</div>
+    <div class="widget" title="User information">Users</div>
+    <div class="widget" title="Settings information">Settings</div>
+
+    <!-- First jQuery version -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        var jq1 = jQuery.noConflict(true);
+    </script>
+
+    <!-- Second jQuery version -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="Q9_Multi_jQuery_Widgets.js"></script>
+
+</body>
+</html>

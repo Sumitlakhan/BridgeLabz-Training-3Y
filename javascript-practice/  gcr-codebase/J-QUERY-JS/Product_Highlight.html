@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Highlight</title>
+    <style>
+        .product {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            cursor: pointer;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .selected {
+            color: red;
+        }
+        .details {
+            display: none;
+        }
+        .product[data-discount] {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Products</h1>
+
+    <div class="product" data-stock="yes">
+        <button class="favorite">♡</button>
+        <h3>Laptop</h3>
+        <p>Price: 50000</p>
+        <p class="details">8GB RAM, 512GB SSD</p>
+    </div>
+
+    <div class="product" data-stock="yes" data-discount="20">
+        <button class="favorite">♡</button>
+        <h3>Mobile</h3>
+        <p>Price: 20000</p>
+        <p class="details">128GB Storage</p>
+    </div>
+
+    <div class="product" data-stock="no">
+        <button class="favorite">♡</button>
+        <h3>Headphones</h3>
+        <p>Price: 2000</p>
+        <p class="details">Wireless Headphones</p>
+    </div>
+
+    <div class="product" data-stock="yes" data-discount="10">
+        <button class="favorite">♡</button>
+        <h3>Smart Watch</h3>
+        <p>Price: 4000</p>
+        <p class="details">Fitness Tracking</p>
+    </div>
+
+    <div class="product" data-stock="yes">
+        <button class="favorite">♡</button>
+        <h3>Keyboard</h3>
+        <p>Price: 1500</p>
+        <p class="details">Mechanical Keyboard</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="Q2_Product_Highlight.js"></script>
+</body>
+</html>

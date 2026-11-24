@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form Validation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+
+        #message {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form id="registrationForm">
+
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <label>Password:</label>
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="Q10_Registration_Form_Validation.js"></script>
+
+</body>
+</html>
